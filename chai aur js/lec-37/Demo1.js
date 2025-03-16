@@ -1,0 +1,1 @@
+// JS asynchronous language h but uska default behaviour synchronous hota h. Us behavior ko hame forcefully bta kr async bnana pdta h. Sbse easy example h aapke settimeout or setinterval methods. 
