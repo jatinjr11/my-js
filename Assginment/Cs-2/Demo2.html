@@ -1,0 +1,22 @@
+<!-- 2.A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+Ask user for quantity
+Suppose, one unit will cost 100.
+Judge and print total cost for user. -->
+
+
+<!-- 2000 * 10 /100 -->
+
+<script>
+        var Quantity = parseInt(prompt("Quantity ?"));
+
+        var unitPrice = 100;
+        var totalCost  = unitPrice * Quantity;
+
+        if(totalCost > 1000){
+            totalCost = totalCost - (totalCost * 10/ 100); 
+            document.write("You Received 10% Discount: "+totalCost);
+        } else {
+            document.write(totalCost);
+        }
+
+</script>

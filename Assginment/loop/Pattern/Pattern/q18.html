@@ -1,0 +1,15 @@
+<!--    18) 1	2	2	4	8	32	…… n terms
+ -->
+ <script>
+    var number=parseInt(prompt("Enter the number"));
+    var a=1;
+    var b=2;
+    document.writeln(a+" ");
+    document.writeln(b+" ");
+    for (var i=3; i<=number; i++) {
+        var result=a*b;
+        a=b;
+        b=result;
+        document.writeln(result+" ");
+    }
+</script>

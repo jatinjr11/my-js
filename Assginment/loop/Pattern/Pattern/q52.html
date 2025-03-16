@@ -1,0 +1,34 @@
+<!--     52) WAP to find out all the Armstrong numbers between two entered numbers
+ -->
+<script>
+function isArmstrong(num) {
+    let numStr = num.toString();
+    let numDigits = numStr.length;
+    let sum = 0;
+
+    for (let digit of numStr) {
+        sum += Math.pow(parseInt(digit), numDigits);
+    }
+
+    return sum === num;
+}
+
+function findArmstrongNumbers(start, end) {
+   document.writeln("Armstrong numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+        if (isArmstrong(num)) {
+           document.writeln(num);
+        }
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    findArmstrongNumbers(start, end);
+} else {
+   document.writeln("Starting number should be less than or equal to ending number.");
+}
+
+</script>

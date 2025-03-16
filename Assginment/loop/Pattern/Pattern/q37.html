@@ -1,0 +1,18 @@
+<!--   37) WAP to check whether entered number is palindrome or not
+ -->
+<script>
+    var number = parseInt(prompt("Enter the number"));
+    var orignal=number;
+    var reverse=0;
+    while(orignal!=0){
+    reverse=reverse * 10 + (orignal % 10);
+    orignal =parseInt(orignal / 10);
+    }
+    if(reverse==number){
+        document.write("It is a Palindrome Number");
+    }
+    else{
+        document.write("It is not a Palindrome Number"); 
+    }
+
+</script>

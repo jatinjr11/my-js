@@ -1,0 +1,28 @@
+<!--   51) WAP to reverse all the numbers between two entered numbers -->
+<script>
+function reverseNumber(num) {
+    let reversed = 0;
+    while (num !== 0) {
+        const digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = Math.floor(num / 10);
+    }
+    return reversed;
+}
+
+function reverseNumbersInRange() {
+    const start = parseInt(prompt("Enter the starting number:"));
+    const end = parseInt(prompt("Enter the ending number:"));
+
+    if (start > end) {
+       document.write("Starting number should be less than the ending number.");
+    } else {
+       document.writeln("Reversed numbers between " + start + " and " + end + ":");
+        for (let i = start + 1; i < end; i++) {
+            const reversed = reverseNumber(i);
+           document.writeln("<br> "+i + "Reverse: " + reversed);
+        }
+    }
+}
+reverseNumbersInRange();
+   </script>

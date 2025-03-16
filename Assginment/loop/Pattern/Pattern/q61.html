@@ -1,0 +1,26 @@
+<!--  61) WAP to find out all the leap years between two entered years
+ -->
+<script>
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+function findLeapYears(startYear, endYear) {
+    document.writeln("Leap years between", startYear, "and", endYear, "are:");
+
+    for (let year = startYear; year <= endYear; year++) {
+        if (isLeapYear(year)) {
+           document.writeln(year);
+        }
+    }
+}
+let startYear = parseInt(prompt("Enter the starting year:"));
+let endYear = parseInt(prompt("Enter the ending year:"));
+
+if (!isNaN(startYear) && !isNaN(endYear) && startYear <= endYear) {
+    findLeapYears(startYear, endYear);
+} else {
+   document.writeln("Please enter valid years with starting year less than or equal to ending year.");
+}
+
+</script>

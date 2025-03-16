@@ -1,0 +1,18 @@
+<!-- 63.
+         A 
+       A B C
+     A B C D E
+   A B C D E F G
+ A B C D E F G H I -->
+ <script>
+    for(let i=65;i<=73;i++){
+        for(let s=73;s>=i;s--){
+       document.write(" ");
+        }
+         for(let j=65;j<=i;j++){
+          if(i%2!=0)
+        document.write(String.fromCharCode(j)+" ");
+         }
+         document.write("<br>");
+      }
+ </script>

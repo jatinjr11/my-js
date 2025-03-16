@@ -1,0 +1,15 @@
+<!--     44) WAP to interchange first and last digit of a number
+ -->
+<script>
+        var number = parseInt(prompt("Enter the number"));
+    var digit=0;
+    var first=0;
+   var reverse=0;
+    for(var i=0; number!=0; i++){
+       digit=number%10;
+       reverse=digit;
+    first=digit;
+    number=parseInt(number/10);
+    }
+    document.write(first);
+</script>

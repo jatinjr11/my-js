@@ -1,0 +1,17 @@
+<!-- 33. A rectangular garden has dimensions of 30 m by 20 m and is divided in to 4 parts by two pathways that run perpendicular from its sides. One pathway has a width of 3 m and the other, 4 m. Calculate the total usable area of the garden. -->
+<script>
+    var length, breadth, g_area;
+    length = 30;
+    breadth = 20;
+    g_area = length * breadth;
+    var f_bre, f_area;
+    f_bre = 3;
+    f_area = f_bre * length;
+    var s_bre, s_area;
+    s_bre = 4;
+    s_area = breadth * s_bre;
+    var common_area = f_bre * s_bre;
+    var totalp_area = f_area + s_area - common_area;
+    var usable_area = g_area - totalp_area;
+    document.write("<br> the total usable area of the garden : " + usable_area);
+</script>

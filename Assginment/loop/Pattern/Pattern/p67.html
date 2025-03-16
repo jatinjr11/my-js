@@ -1,0 +1,24 @@
+<!-- 67.
+     A 
+    B B
+   C   C
+  D     D
+ E E E E E -->
+ <script>
+    let ch='A';
+     for(let i=1;i<=5;i++){
+      for(let s=5;s>=i;s--){
+      document.write(" ");
+      }
+       for(let j=1;j<=i;j++){
+       if(i==3&&j==2||i==4&&j==2||i==4&&j==3){
+     document.write("  ");}
+   
+       else{
+     document.write(ch+" ");}
+
+       }
+       document.write("<br>");
+       ch++;
+     }
+ </script>

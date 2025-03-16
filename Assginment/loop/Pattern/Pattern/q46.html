@@ -1,0 +1,15 @@
+<!--     46) WAP to find out the sum of first and last digit of a user entered number 
+ -->
+<script>
+function sumFirstAndLastDigit(number) {
+    let numStr = number.toString();
+    let firstDigit = parseInt(numStr[0]);
+    let lastDigit = parseInt(numStr[numStr.length - 1]);
+
+    return firstDigit + lastDigit;
+}
+let userNumber = prompt("Enter a number:");
+let sum = sumFirstAndLastDigit(userNumber);
+document.write("Sum of first and last digit is:", sum);
+
+</script>
