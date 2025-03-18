@@ -7,7 +7,7 @@ const myHeors = ["shaktiman", "naagraj"]
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
-// methods
+// methods  
 
 // myArr.push(6)
 // console.log(myArr);
@@ -17,8 +17,10 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.unshift(9)
 // myArr.shift()
 
+// it check value exists or not
 // console.log(myArr.includes(9)); // false/true
-// console.log(myArr.indexOf(3)); // 
+// console.log(myArr.indexOf(9)); //  
+// it returns indx of value     
 // console.log(myArr.indexOf(9)); // -1
 
 /*
