@@ -1,6 +1,6 @@
 
 // const tinderUser = new Object()  // singleton obj
-// const tinderUser = {} // non-singleton obj
+// const tinderUser = {} // non-singleton objv
 // console.log(tinderUser);
 
 tinderUser.id = "123abc";
