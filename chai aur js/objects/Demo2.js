@@ -29,6 +29,7 @@ const obj4 = { 5: "a", 6: "b" }
 // const obj3 = { obj1, obj2 } // array jesi baat aayegi
 
 // const obj3 = Object.assign(obj1, obj2, obj4)
+// syntax
 // Object.assign(target , source)
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
