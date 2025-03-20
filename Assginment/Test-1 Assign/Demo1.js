@@ -7,3 +7,4 @@
 const input = [1, 2, 3, 4, 5];
 const reslt = input.map(ele => ele * ele);
 console.log(reslt);
+ 
