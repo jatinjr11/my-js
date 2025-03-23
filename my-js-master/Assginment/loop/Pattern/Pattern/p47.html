@@ -1,0 +1,23 @@
+<!-- 47.
+    1
+   11
+  1*1
+ 1**1
+11111 -->
+<script>
+     for(let i=1;i<=5;i++){
+   for(let s=5;s>i;s--){
+    document.write(" ");
+   }
+     for(let j=1;j<=i;j++){
+
+      if(i==3&&j==2||i==4&&j==2||i==4&&j==3){
+     document.write("*");}
+
+      else{
+     document.write("1");}
+
+     }
+     document.write("<br>");
+  }
+</script>

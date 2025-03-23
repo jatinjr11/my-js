@@ -1,0 +1,33 @@
+<!--    49) WAP to find out all the perfect numbers between two entered numbers
+ -->
+<script>
+function isPerfectNumber(num) {
+    let sum = 0;
+
+    for (let i = 1; i <= num / 2; i++) {
+        if (num % i === 0) {
+            sum += i;
+        }
+    }
+
+    return sum === num && num !== 0;
+}
+
+function findPerfectNumbers(start, end) {
+  document.write("Perfect numbers between ", start, " and ", end, " are: ");
+
+    for (let num = start; num <= end; num++) {
+        if (isPerfectNumber(num)) {
+           document.write(num);
+        }
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    findPerfectNumbers(start, end);
+} else {
+    document.write("Starting number should be less than or equal to ending number.");
+}
+</script>

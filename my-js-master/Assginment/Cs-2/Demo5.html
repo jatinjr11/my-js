@@ -1,0 +1,40 @@
+<!-- 5.Take input of age of 3 people by user and determine oldest and youngest among them. -->
+
+<script>
+    var p1 = 11;
+    var p2 = 22;
+    var p3 = 58;
+
+    // for old
+    if(p1 > p2) {
+        if(p1 > p3) {
+            document.write("p1 is oldest");
+        } else {
+            document.write("p3 is oldest");
+        }
+    } else {
+        if(p2 > p3) {
+            document.write("p2 is oldest");
+        } else {
+            document.write("p3 is oldest");
+        }
+    }
+
+    document.write("<br>");
+    
+    // for young
+    if(p1 < p2){
+        if(p1 < p3){
+            document.write("p1 is youngest");
+        } else {
+            document.write("p3 is youngest");
+        }
+    } else {
+        if(p2 < p3) {
+            document.write("p2 is youngest");
+        } else {
+            document.write("p3 is youngest");
+        }
+    }
+
+</script>

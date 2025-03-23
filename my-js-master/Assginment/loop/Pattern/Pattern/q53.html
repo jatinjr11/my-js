@@ -1,0 +1,42 @@
+<!--   53) WAP to print all the strong numbers between two entered numbers
+ -->
+<script>
+function factorial(n) {
+    if (n === 0 || n === 1) return 1;
+    let fact = 1;
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+function isStrong(num) {
+    let numStr = num.toString();
+    let sum = 0;
+
+    for (let digit of numStr) {
+        sum += factorial(parseInt(digit));
+    }
+
+    return sum === num;
+}
+
+function findStrongNumbers(start, end) {
+    console.log("Strong numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+        if (isStrong(num)) {
+            console.log(num);
+        }
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    findStrongNumbers(start, end);
+} else {
+    console.log("Starting number should be less than or equal to ending number.");
+}
+
+</script>

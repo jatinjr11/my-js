@@ -1,0 +1,22 @@
+<!-- 48.
+    A
+   AB
+  A_C
+ A__D
+ABCDE -->
+<script>
+     for(let i=65;i<=69;i++){
+   for(let s=69;s>i;s--){
+   document.write(" ");
+   }
+    for(let j=65;j<=i;j++){
+     if(i==67&&j==66||i==68&&j==66||i==68&&j==67){
+    document.write("_");}
+
+     else{
+     document.write(j);}
+
+    }
+    document.write("<br>");
+  }
+</script>

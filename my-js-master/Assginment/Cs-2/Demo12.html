@@ -1,0 +1,18 @@
+<!-- 12.A 4 digit number is entered through keyboard. Write a program to print a new number with digits reversed as of orignal one. E.g.-
+INPUT : 1234        OUTPUT : 4321
+INPUT : 5982        OUTPUT : 2895  -->
+
+<script>
+    var num = 1245;
+    var reversedNum = 0;
+    var temp = num;
+
+    while (temp != 0) {
+        var digit = temp % 10;  
+        reversedNum = (reversedNum * 10) + digit;  
+        temp = parseInt(temp / 10); 
+    }
+    // document.write("<br> "+ temp);
+    document.write("<br> "+reversedNum);
+
+</script>

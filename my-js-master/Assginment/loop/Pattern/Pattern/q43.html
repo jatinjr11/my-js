@@ -1,0 +1,22 @@
+<!--   43) WAP to convert binary number into decimal number
+ -->
+<script>
+function binaryToDecimal(binaryStr) {
+    let decimal = 0;
+    let length = binaryStr.length;
+
+    for (let i = 0; i < length; i++) {
+        let bit = binaryStr[i];
+        if (bit === '1') {
+            decimal += Math.pow(2, length - 1 - i);
+        }
+    }
+
+    return decimal;
+}
+
+let binaryNumber = "1101";
+let decimalNumber = binaryToDecimal(binaryNumber);
+document.write("Decimal equivalent of ", binaryNumber, " is ", decimalNumber);
+
+</script>

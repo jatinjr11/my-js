@@ -1,0 +1,29 @@
+<!--   56) WAP to print factorial of all the numbers between two entered numbers
+ -->
+  <script>
+function factorial(n) {
+    if (n === 0 || n === 1) return 1;
+    let fact = 1;
+    for (let i = 2; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+function printFactorials(start, end) {
+   document.writeln("Factorials of numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+       document.writeln(num, "! =", factorial(num));
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    printFactorials(start, end);
+} else {
+  document.writeln("Starting number should be less than or equal to ending number.");
+}
+
+  </script>

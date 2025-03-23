@@ -1,0 +1,23 @@
+<!--     60) WAP to print Square, Cube and Square Root of all numbers from 1 to N
+ -->
+<script>
+function printSquareCubeRoot(n) {
+   document.writeln("Number\tSquare\tCube\tSquare Root");
+
+    for (let num = 1; num <= n; num++) {
+        let square = num * num;
+        let cube = num * num * num;
+        let squareRoot = Math.sqrt(num).toFixed(2);
+
+       document.writeln("<br> "+num + "\t" + square + "\t" + cube + "\t" + squareRoot);
+    }
+}
+let n = parseInt(prompt("Enter the value of N:"));
+
+if (!isNaN(n) && n > 0) {
+    printSquareCubeRoot(n);
+} else {
+   document.writeln("Please enter a valid positive number.");
+}
+
+</script>

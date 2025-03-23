@@ -1,0 +1,29 @@
+<!-- 25. Write a Java program to calculate profit or loss.  -->
+
+
+<script>
+    // Function to calculate profit or loss
+function calculateProfitLoss(costPrice, sellingPrice) {
+    if (sellingPrice > costPrice) {
+        let profit = sellingPrice - costPrice;
+        console.log(`You made a Profit of: Rs. ${profit}`);
+    } else if (sellingPrice < costPrice) {
+        let loss = costPrice - sellingPrice;
+        console.log(`You incurred a Loss of: Rs. ${loss}`);
+    } else {
+        console.log("No Profit, No Loss.");
+    }
+}
+
+// Taking user input
+let costPrice = parseFloat(prompt("Enter Cost Price (CP):"));
+let sellingPrice = parseFloat(prompt("Enter Selling Price (SP):"));
+
+// Checking if input is valid
+if (!isNaN(costPrice) && !isNaN(sellingPrice) && costPrice > 0 && sellingPrice > 0) {
+    calculateProfitLoss(costPrice, sellingPrice);
+} else {
+    console.log("Invalid input! Please enter valid positive numbers.");
+}
+
+</script>

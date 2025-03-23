@@ -1,0 +1,35 @@
+<!-- 13. Program to perform arithmetic operation using switch case -->
+
+<script>
+    var operator = "/";
+    var n1 = 10;
+    var n2 = 0;
+
+    switch (operator) {
+        case "+":
+            document.write("Result: " + (n1 + n2));
+            break;
+        case "-":
+            document.write("Result: " + (n1 - n2));
+            break;
+        case "*":
+            document.write("Result: " + (n1 * n2));
+            break;
+        case "/":
+            if (n2 != 0) {
+                document.write("Result: " + (n1 / n2));
+            } else {
+                document.write("Error! Division by zero is not allowed");
+            }
+            break;
+        case "%":
+            if (n2 != 0) {
+                document.write("Result: " + (n1 % n2));
+            } else {
+                document.write("Error! Division by zero is not allowed");
+            }
+            break;
+        default:
+            document.write("Invalid Input");
+    }
+</script>

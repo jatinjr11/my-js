@@ -1,0 +1,25 @@
+<!-- 8. Modify the above question to allow student to sit if he/she has medical cause. Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly. -->
+
+<script>
+    var heldClasses = 200;
+    var attendedClasss = 22;
+
+    var attendPercentage = (attendedClasss/ heldClasses) * 100;
+
+    document.write("Attendece percentage: "+attendPercentage+"%");
+    document.write("<br>");
+    if(attendPercentage >= 75){
+        document.write("Allowed");
+    } else {
+
+        var medicalCause  = "yes";
+
+        if(medicalCause == "yes"){
+            document.write("You are allowed to sit in the exam due to medical cause ");
+        } else {
+            document.write("You are not allowed to sit in the exam");
+        }
+
+        // document.write("Not Allowed");
+    } 
+</script>

@@ -1,0 +1,23 @@
+<!-- 39) WAP to check whether entered number is strong or not -->
+<script>
+   var n=prompt("Enter a number");
+   var reverse=0,sum=0;
+   var a=n;
+   var fact=1;
+   for(var i=0;a0;i++){
+       reverse=a%10;
+
+       for(var i=1;i<=reverse;i++){
+           fact=fact*i;
+          
+       }
+       sum+=fact;
+       a=parseInt(a/10);
+   }
+   if(n==sum){
+       document.write("Number is strong");
+   }
+   else{
+       document.write("Number is not  strong");
+   }
+</script>

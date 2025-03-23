@@ -1,0 +1,15 @@
+<!--   42) WAP to find out HCF of a number
+ -->
+<script>
+     var number1=parseInt(prompt("Enter the number"));
+     var number2=parseInt(prompt("Enter the number"));
+     var i=1;
+     var j=1;
+     var hcf=1;
+     while(i<=number1 && i<=number2){
+     if (number1%i==0 && number2%i==0){
+      hcf=i;
+     }
+      i++;}
+      document.write("HCF: "+hcf);
+</script>

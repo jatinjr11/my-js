@@ -1,0 +1,29 @@
+<script>
+    let choice = "+";
+    let num1 = 10;
+    let num2 = 20;
+
+    if (choice === "+") {
+
+        let sum = num1 + num2;
+        document.write("Sum: " + sum);
+    } else if (choice === ">") {
+
+        if (num1 > num2) {
+            document.write(num1 + " is greater.");
+        } else   if (num1 < num2) {
+            document.write(num2 + " is greater.");
+        } else {
+            document.write("Both numbers are equal.");
+        }
+    } else if (choice === "==") {
+
+        if (num1 === num2) {
+            document.write("Both numbers are equal.");
+        } else {
+            document.write("Numbers are not equal.");
+        }
+    } else {
+        document.write("Invalid choice! Please enter +, >, or ==.");
+    }
+</script>

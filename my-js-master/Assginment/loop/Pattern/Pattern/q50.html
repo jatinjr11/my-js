@@ -1,0 +1,29 @@
+<!--   50) WAP to find out all the palindrome numbers between two entered numbers
+ -->
+<script>
+function isPalindrome(num) {
+    let numStr = num.toString();
+    let reversedStr = numStr.split('').reverse().join('');
+    return numStr === reversedStr;
+}
+
+function findPalindromes(start, end) {
+  document.write("Palindrome numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+        if (isPalindrome(num)) {
+          document.write("<br> "+num);
+        }
+    }
+}
+
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    findPalindromes(start, end);
+} else {
+  document.write("Starting number should be less than or equal to ending number.");
+}
+
+</script> 

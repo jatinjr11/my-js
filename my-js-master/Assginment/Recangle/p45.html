@@ -1,0 +1,16 @@
+<!-- 45. Find the sum of 28 terms of an Arithmetic Progression -21 -18 -15 -12 . . . . . -->
+<script>
+    var a1, n, d, a2, m;
+    a1 = -21;
+    a2 = -18;
+    d = a2 - a1;
+    n = 28;
+    m = n - 1;
+    var a28 = m * d + a1;
+    var sum = (n * (2 * a1 + m * d)) / 2;
+
+    document.write("<br>" + a28);
+    document.write("<br>" + d);
+    document.write("<br>" + sum);
+
+</script>

@@ -1,0 +1,29 @@
+<!--    57) WAP to print all the prime numbers between two entered numbers
+ -->
+<script>
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function printPrimes(start, end) {
+    document.writeln("Prime numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+        if (isPrime(num)) {
+         document.writeln(num);
+        }
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    printPrimes(start, end);
+} else {
+    document.writeln("Starting number should be less than or equal to ending number.");
+}
+</script>

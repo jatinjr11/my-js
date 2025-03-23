@@ -1,0 +1,19 @@
+<!-- 9. Write a program to check whether a entered character is lowercase ( a to z ) or uppercase ( A to Z ). -->
+
+<script>
+    var char = 'a';
+
+    if (char.length == 1) {
+        if (char >= 'a' && char <= 'z') {
+            document.write("The character is lowercase");
+        } else if (char >= 'A' && char <= 'Z') {
+            document.write("The character is Uppercase");
+        } else {
+            document.write("Please Enter a Letter");
+        }
+    }
+    else {
+        document.write("Please Enter Only 1 Letter: ");
+    }
+
+</script>

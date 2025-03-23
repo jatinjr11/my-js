@@ -1,0 +1,11 @@
+<!--    35) WAP to count number of digits
+ -->
+<script>
+    var number = parseFloat(prompt("Enter the number"));
+    var count=0;
+    while(number!=0){
+     number=(number-(number%10))/10;
+     count++;
+    }
+    document.write("Number of Digits: "+count);
+</script>

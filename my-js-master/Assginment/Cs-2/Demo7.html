@@ -1,0 +1,27 @@
+<!-- 7. A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+Take following input from user
+Number of classes held
+Number of classes attended.
+And print
+percentage of class attended
+Is student is allowed to sit in exam or not. -->
+
+<script>
+
+    var heldClasses = 200;
+    var attendedClasss = 22;
+
+    var attendPercentage = (attendedClasss/ heldClasses) * 100;
+
+    document.write("Attendece percentage: "+attendPercentage+"%");
+    document.write("<br>");
+    if(attendPercentage >= 75){
+        document.write("Allowed");
+    } else {
+        document.write("Not Allowed");
+    } 
+    
+
+
+
+</script>

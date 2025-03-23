@@ -1,0 +1,21 @@
+<!--     55) WAP to print all the odd numbers between two entered numbers
+ -->
+<script>
+function findOddNumbers(start, end) {
+   document.writeln("Odd numbers between", start, "and", end, "are:");
+
+    for (let num = start; num <= end; num++) {
+        if (num % 2 !== 0) {
+          document.writeln(num);
+        }
+    }
+}
+let start = parseInt(prompt("Enter the starting number:"));
+let end = parseInt(prompt("Enter the ending number:"));
+
+if (start <= end) {
+    findOddNumbers(start, end);
+} else {
+    document.writeln("Starting number should be less than or equal to ending number.");
+}
+</script>
