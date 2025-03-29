@@ -16,8 +16,8 @@ const { courseInstructor: instructor } = course
 
 // JSOn
 // {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
+//     "name": "jos",
+//     "coursename": "B.Tech ",
 //     "price": "free"
 // }
 
