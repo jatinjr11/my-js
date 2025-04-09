@@ -18,7 +18,7 @@ const { courseInstructor: instructor } = course
 // {
 //     "name": "jos",
 //     "coursename": "B.Tech ",
-//     "price": "free"
+//     "price": "4,000"
 // }
 
 [
