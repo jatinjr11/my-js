@@ -1,0 +1,50 @@
+db.cars.aggregate([
+    {
+        $group: {_id: "$maker"}
+    }
+])
+
+db.cars.aggregate([
+    {
+        $group: {
+            _id: "$maker",
+            totalCars: {$sum: 1}
+        }
+    }
+])
+
+db.cars.aggregate([
+    {
+        $group: {
+            _id: "$maker",
+            AvgPrice: {$avg: "$price"}
+        }
+    }
+])
+
+db.cars.aggregate([
+    {
+        $group: {
+            _id: "$fuel_type",
+            TotalCars: {$sum: 1}
+        }
+    }
+])
+
+// Match
+db.cars.aggregate([
+    {
+        $match: {
+            maker: "Hyundai",
+            "engine.cc": {$gt: 1000}
+        }
+    }
+]);
+
+// print total no. of Hyundai cars
+db.cars.aggregate([
+    {$match: {
+            maker: "Tata"
+    }},
+    {$count: "Total_cars"}
+]);
