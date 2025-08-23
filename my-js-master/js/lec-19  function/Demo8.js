@@ -1,5 +1,6 @@
 // Pure Functions => a function that always produces the same output for the same input
 // it cannot modify the state of the program
+// it cannot have side effects
 function add(a, b) {
     return a + b;
 }
