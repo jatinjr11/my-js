@@ -29,11 +29,12 @@ function addTwoNumbers(number1, number2) {
 // arguments
 // addTwoNumbers(2,4);
 // addTwoNumbers(2,"4"); // 24
-addTwoNumbers(2, "a"); // 2a
+// addTwoNumbers(2, "a"); // 2a
 
-const result = addTwoNumbers(3, 5)
+// const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, "?")
 
-// console.log("Result: ", result);
+console.log("Result: ", result);
 
 
 // function loginUserMessage(){
@@ -46,9 +47,9 @@ function loginUserMessage(username) {
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("sachin"))
 // console.log(loginUserMessage()) // undefined
-console.log(loginUserMessage()) // "sam"
+// console.log(loginUserMessage()) // "sam"
 
 // ---------------------part 2--------------------------------
 
