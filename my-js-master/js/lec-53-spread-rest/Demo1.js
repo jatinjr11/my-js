@@ -1,9 +1,15 @@
 // Spread Operator
 
 // Spread Operator is used to spread the elements of an array or object into individual elements or properties. 
-const array = [1, 2, 3, 4, 5];
+const array_1 = [1, 2, 3, 4, 5];
+const array_2 = [6, 7, 8, 9, 10];
 // console.log(array);
-// console.log(...array);
+
+// spread 
+// console.log(...array_1, ...array_2);
+
+// merging
+// console.log([...array_1, ...array_2]);
 
 const obj_1 = {
     name: 'John',
@@ -15,6 +21,6 @@ const obj_2 = {
     age: 18
 }
 
-console.log({...obj_1, ...obj_2});
+// console.log({...obj_1, ...obj_2});
 
 
