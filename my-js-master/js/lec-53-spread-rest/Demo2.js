@@ -7,4 +7,4 @@ function greet(a,b,c){
 
 
 const arr = ["Hyyy", "hello", "hey"]
-greet(...arr)
+greet(...arr); // Hyyy hello hey
