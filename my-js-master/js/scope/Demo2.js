@@ -14,6 +14,8 @@ const user = {
 // user.welcomeMessage();
 
 // console.log(this) // in global scope and in node this keyword refers to the empty object
+// borweser ke andr jo global object h wo window object h
+// node ke andr global object h empty object
 
 /*
 function demo(){
