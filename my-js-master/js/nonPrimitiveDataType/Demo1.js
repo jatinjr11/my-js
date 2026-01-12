@@ -1,4 +1,6 @@
-// Non-Primitive (Reference) Types
+// Non-Primitive (Reference) D. Types -> they store collections of data 
+// They stored by refrence(memory address) not by value
+// They are mutable (can be changed)
 // 1. Array
 // 2. Object
 // 3. Function
