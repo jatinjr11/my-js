@@ -1,9 +1,7 @@
-console.log("1");
+console.log("Start...")
 
-setTimeout(() => {
-  console.log("2");
-}, 0);
+setTimeout(()=> {
+  console.log("Timeout")
+},0);
 
-Promise.resolve().then(() => console.log("3"));
-
-console.log("4");
+console.log("End...")
