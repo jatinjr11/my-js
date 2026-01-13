@@ -1,10 +1,17 @@
 // Rest Operator
 
-function display(a,b, ...rest){
-    console.log(a)
-    console.log(b)
-
-    console.log(rest)
+function greet(message, ...names){
+    console.log(message);
+    console.log(names);
+    console.log(typeof names);
 }
 
-display(1,2,3,4,5,6);
+greet("Hello", "Amit", "Rahul", "Ravi");
+
+
+// it must be the last parameter
+// function test(...a, b) { } // ❌ Error
+
+// rest -> collect
+// spread -> expand
+
