@@ -1,19 +1,5 @@
-// getData(function (a) {
-//   getMoreData(a, function (b) {
-//     getFinalData(b, function (c) {
-//       console.log(c);
-//     });
-//   });
-// });
+async function test(){
+  return 10;
+}
 
-
-
-getData(function (a) {
-  getMoreData(a, function(b){
-    getFinalData(b, function(c){
-      console.log(c);
-    })
-  })
-});
-
-getData(10)
+console.log(test()); // Promise { 10 }

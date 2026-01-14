@@ -13,7 +13,7 @@
 
 async function myFunc() {
   try {
-    let response = await fetch("https://jsonplaceholder.typicode.com/posts/2");
+    let response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
     const data = await response.json();
     console.log("data mil gaya", data);
   } catch (error) {
