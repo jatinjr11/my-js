@@ -19,5 +19,5 @@ function counter() {
 
 const c = counter();
 console.log("C: ", c)
-console.log(c.increment());
-console.log(c.increment());
+console.log(c.increment()); // 1
+console.log(c.increment()); // 2
