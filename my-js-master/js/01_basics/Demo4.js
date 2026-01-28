@@ -6,16 +6,16 @@ let status = (age > 18) ? "i can vote" : "i can't vote";
 // 0, "", null, undefined, NaN, false
 
 /*
-let myNumber = 0;
+let myNumber = "";
 if (myNumber)
-console.log("it is truthy")
+    console.log("it is truthy")
 else
 console.log("it is falsy")
+*/
 
-let value = 'kkkk';
+let value = null;
 let temp = Boolean(value);
 console.log(temp);
-*/
 
 // short circuiting
 // && - if first value is false then it will not check second value
