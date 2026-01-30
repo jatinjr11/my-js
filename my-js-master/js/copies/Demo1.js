@@ -9,7 +9,7 @@ let originalObj = {
 // 3. JSON.parse(JSON.stringify(originalObj))
 // 4. Object.create
 
-// shallow copy -> original object me change kroge to shallow copy me bhi change hoga beacuse the copy is not deep, and it is memory ref is same
+// shallow copy -> original object me change kroge to shallow copy me bhi change hoga beacuse the copy is not deep, and the memory ref is same
 
 
 // let shallowCopy = Object.assign({}, originalObj);
