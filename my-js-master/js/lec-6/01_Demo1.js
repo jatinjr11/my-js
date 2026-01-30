@@ -4,7 +4,7 @@
 // let score = null; 
 let score = undefined; 
 // let score = true
-// let score = "hitesh"
+// let score = "sachin"
 
 // console.log(typeof score);
 // console.log(typeof(score));
